@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+/* Navbar */
+.navbar h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+.first-content {
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+    margin-top: 10px;
+}
+
+
+
+.first-content h1 {
+    color: #003cff;
+    font-weight: 900;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+
+.first-content img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.first-content-button {
+    margin-top: 20px;
+}
+
+.first-content-button button {
+    background-color: #4E6Bff;
+    border: none;
+    border-radius: 40px;
+    height: 60px;
+    width: 100%;
+    max-width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.first-content-button button:hover {
+    background-color: #2c4a5e;
+    font-weight: 600;
+}
+.first-content-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.first-content h6 {
+    color: #efeff2;
+    text-align: center;
+    font-size: large;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .first-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .first-content-button {
+        margin-top: 20px;
+    }
+
+    .first-content-button button {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.second-content {
+    margin-top: 80px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0; /* Added padding instead of height for better responsiveness */
+    
+}
+
+.support {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 3vh; /* Reduced margin-top for better spacing */
+}
+
+.second-content h5 {
+    font-weight: 900;
+    margin-left: 30px;
+    margin-top: 0; /* Removed margin-top to align with the icon */
+}
+
+.third-content {
+    background-color: white;
+    
+    margin-bottom: 80px;
+    border-radius: 40px;
+}
+.third-content img {
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.third-content p {
+    color: #4E6Bff;
+    font-weight: bold;
+    margin-top: 22px;
+}
+.third-content h1 {
+    text-align: center;
+    margin-right: 5px;
+    font-weight: 700;
+}
+
+.third-content-button {
+    margin-left: -200px;
+}
+.third-content-button button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.third-content-button button img {
+    width: 10%;
+}
+
+.third-content-button button:hover {
+    animation: blinkAnimation 1s infinite;
+}
+
+@keyframes blinkAnimation {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+.third-content-button h5 {
+    margin-left: -200px;
+    margin-top: 40px;
+}
+.third-content h6 {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.fourth-content {
+    background-color: white;
+    margin-top: 80px;
+    padding: 40px 0; /* Added padding */
+    border-radius: 10px;
+    
+}
+
+.fourth-content-image {
+    text-align: center;
+    padding: 20px;
+}
+
+.fourth-content-image img {
+    width: 100%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.fourth-content-image h3, 
+.fourth-content-image h4, 
+.fourth-content-image h5 {
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.fourth-content h1 {
+    color: #4E6Bff;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.fourth-content h6 {
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+/* Override Bootstrap container padding */
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .fourth-content-image {
+        padding: 10px;
+    }
+
+    .fourth-content h1 {
+        margin-top: 20px;
+    }
+
+    .fourth-content h6 {
+        margin-bottom: 20px;
+    }
+}
+* SERVICE */
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(var(--c-brand-rgb), 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: var(--transition);
+}
+
+
+.service:hover::after {
+    width: 100%;
+    height: 100%;
+    background: var(--c-brand);
+    z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+
+.service:hover .iconbox {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+}
+.navbar h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+a {
+    text-decoration: none;
+}
+.navbar-nav a:hover {
+    background-color: #003cff;
+    color: white;
+    border-radius: 5px; /* Optional: to add rounded corners to the hover effect */
+    padding: 5px 15px;
+}
+#scrollToTopBtn {
+    display: none; /* Initially hidden */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Above other content */
+    background-color: #003cff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50PX;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #001f5a;
+}
+#whatsappIcon {
+    position: fixed;
+    bottom: 80px; /* Adjust as needed */
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #dadadd;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.footer .contact {
+    margin-top: 30px;
+}
+.blog {
+    text-align: center;
+    background-color: white;
+    margin-top: 80px;
+    border-radius: 10px;
+    padding-top: 20px;
+    height: auto;
+}
+.blog .blog-1 {
+    margin-top: 30px;
+}
+.blog .blog-1 h6 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.blog .blog-1 img {
+    border-radius: 10px;
+}
